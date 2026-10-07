@@ -55,3 +55,15 @@ table, th, td{
 td{
     padding-left: 10px;
 }
+#divsub1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#divsub2{
+    margin: auto;
+    width: 40%;
+}
+#tablafiltro{
+    width: 100%;
+}

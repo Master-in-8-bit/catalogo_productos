@@ -12,63 +12,76 @@
         <div class="inputs">
             <div class="input">
                 <h2>Nombre</h2>
-                <input type="text" id="agregarnombre">
+                <input type="text" id="addname">
             </div>
             <div class="input">
                 <h2>Categoria</h2>
-                <label for="agregarcat"></label>
-                <select name="" id="agregarcat">
-                    <option value="Pancho">Pancho</option>
-                    <option value="Gaseosa">Gaseosa</option>
-                    <option value="Hamburguesa">Hamburguesa</option>
+                <label for="addcat"></label>
+                <select name="" id="addcat">
+                    
                 </select>
             </div>
-            <div class="input" id="agregarprecio">
+            <div class="input">
                 <h2>Precio ($)</h2>
-                <input type="number">
+                <input type="number" id="addprice">
             </div>
             <div class="input">
                 <h2>Stock</h2>
-                <input type="number" id="agregarstock">
+                <input type="number" id="addstock">
             </div>
         </div>
         <br>
-        <button>Agregar producto</button>
+        <button id="add">Agregar producto</button>
     </div>
     <div class="Section">
-        <h1>Buscar y filtrar</h1>
+        <h1>Buscar y filtrar por nombre</h1>
         <div class="inputs">
             <div class="input" id="filtrarnombre">
                 <h2>Buscar por nombre</h2>
-                <input type="text">
+                <input type="text" id="filtername">
             </div>
             <div class="input">
                 <h2>Categoria</h2>
-                <select name="" id="filtrarcat">
-                    <option value="Pancho">Pancho</option>
-                    <option value="Gaseosa">Gaseosa</option>
-                    <option value="Hamburguesa">Hamburguesa</option>
-                </select>
+                <input type="text" id="filtercat" readonly>
             </div>
             <div class="input">
                 <h2>Disponibilidad</h2>
-                <select name="" id="filtrardisp">
-                    <option value="op1">op1</option>
-                    <option value="op2">op2</option>
-                    <option value="op3">op3</option>
-                </select>
+                <input type="text" id="filterdisp" readonly>
             </div>
             <div class="input">
-                <h2>Precio maximo ($)</h2>
-                <input type="number" id="filtrarpreciomax">
+                <h2>Precio</h2>
+                <input readonly="number" id="filterprice">
             </div>
         </div>
         <br>
-        <button>Filtrar producto</button>
+        <button id="filter">Filtrar producto</button>
     </div>
     <div class="Section">
         <h1>Resumen del inventario</h1>
-        <h2>Todavia no se cargaron los datos del inventario</h2>
+        <div id="divsub1">
+            <div id="divsub2">
+                <table id="tablafiltro">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablafiltro1"></tbody>
+                </table>
+            </div>
+            <div id="divsub2">
+                <table id="tablafiltro">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablafiltro2"></tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <div class="Section">
         <h1>Productos</h1>
@@ -84,6 +97,6 @@
             <tbody id="tablaProductos"></tbody>
         </table>
     </div>
-    <script src="./dist/index.js"></script>
+    <script src="./dist/index.js" defer></script>
 </body>
 </html>
