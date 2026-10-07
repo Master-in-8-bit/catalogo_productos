@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="Section">
+        <h1>Agregar producto</h1>
+        <div class="inputs">
+            <div class="input">
+                <h2>Nombre</h2>
+                <input type="text" id="agregarnombre">
+            </div>
+            <div class="input">
+                <h2>Categoria</h2>
+                <label for="agregarcat"></label>
+                <select name="" id="agregarcat">
+                    <option value="Pancho">Pancho</option>
+                    <option value="Gaseosa">Gaseosa</option>
+                    <option value="Hamburguesa">Hamburguesa</option>
+                </select>
+            </div>
+            <div class="input" id="agregarprecio">
+                <h2>Precio ($)</h2>
+                <input type="number">
+            </div>
+            <div class="input">
+                <h2>Stock</h2>
+                <input type="number" id="agregarstock">
+            </div>
+        </div>
+        <br>
+        <button>Agregar producto</button>
+    </div>
+    <div class="Section">
+        <h1>Buscar y filtrar</h1>
+        <div class="inputs">
+            <div class="input" id="filtrarnombre">
+                <h2>Buscar por nombre</h2>
+                <input type="text">
+            </div>
+            <div class="input">
+                <h2>Categoria</h2>
+                <select name="" id="filtrarcat">
+                    <option value="Pancho">Pancho</option>
+                    <option value="Gaseosa">Gaseosa</option>
+                    <option value="Hamburguesa">Hamburguesa</option>
+                </select>
+            </div>
+            <div class="input">
+                <h2>Disponibilidad</h2>
+                <select name="" id="filtrardisp">
+                    <option value="op1">op1</option>
+                    <option value="op2">op2</option>
+                    <option value="op3">op3</option>
+                </select>
+            </div>
+            <div class="input">
+                <h2>Precio maximo ($)</h2>
+                <input type="number" id="filtrarpreciomax">
+            </div>
+        </div>
+        <br>
+        <button>Filtrar producto</button>
+    </div>
+    <div class="Section">
+        <h1>Resumen del inventario</h1>
+        <h2>Todavia no se cargaron los datos del inventario</h2>
+    </div>
+    <div class="Section">
+        <h1>Productos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="tablaProductos"></tbody>
+        </table>
+    </div>
+    <script src="./dist/index.js"></script>
+</body>
+</html>

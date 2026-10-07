@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(205, 243, 255);
+    font-family: courier
+}
+.Section{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 20%;
+}
+input, select{
+    font-size: 20px;
+    width: 100%;
+    background-color: white;
+    font-family: courier;
+}
+button{
+    border: 3px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    display: inline-block; /* o dejarlo como está */
+    width: auto;           /* ancho según el texto */
+    width: fit-content;    /* alternativa moderna */
+    padding: 10px 20px;
+    align-self: left;
+    font-family: courier;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+td{
+    padding-left: 10px;
+}
